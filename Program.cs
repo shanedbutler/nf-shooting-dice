@@ -8,10 +8,10 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-            Player player1 = new SoreLoserPlayer();
+            Player player1 = new OneHigherPlayer();
             player1.Name = "Bob";
 
-            Player player2 = new OneHigherPlayer();
+            Player player2 = new SoreLoserUpperHalfPlayer();
             player2.Name = "Sue";
 
             player2.Play(player1);
