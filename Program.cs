@@ -25,15 +25,15 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            Player large = new LargeDicePlayer();
-            large.Name = "Big Gun Rollsalot";
+            Player player4 = new UpperHalfPlayer();
+            player4.Name = "Big Gun";
 
-            player1.Play(large);
+            player1.Play(player4);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, player4
             };
 
             PlayMany(players);
