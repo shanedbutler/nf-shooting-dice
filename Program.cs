@@ -11,14 +11,14 @@ namespace ShootingDice
             Player player1 = new SmackTalkingPlayer();
             player1.Name = "Bob";
 
-            Player player2 = new Player();
+            Player player2 = new OneHigherPlayer();
             player2.Name = "Sue";
 
             player2.Play(player1);
 
             Console.WriteLine("-------------------");
 
-            Player player3 = new Player();
+            Player player3 = new HumanPlayer();
             player3.Name = "Wilma";
 
             player3.Play(player2);
@@ -26,7 +26,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
-            large.Name = "Bigun Rollsalot";
+            large.Name = "Big Gun Rollsalot";
 
             player1.Play(large);
 
