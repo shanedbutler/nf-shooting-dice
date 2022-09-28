@@ -9,8 +9,7 @@ namespace ShootingDice
         {
             Console.WriteLine($"{this.Name} says \"{this.taunt}\"");
             // Return a random number between 1 and DiceSize
-            return new Random().Next(DiceSize) + 1;
-
+           return base.Roll();
         }
     }
 }
